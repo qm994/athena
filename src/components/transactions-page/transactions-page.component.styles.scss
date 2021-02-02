@@ -1,0 +1,63 @@
+
+.transactions__container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 90vw;
+    height: 80vh;
+    margin-bottom: 2rem;
+    color: black;
+    font-size: 1.5rem;
+
+    .top-components {
+        //background-color: goldenrod;
+        grid-row: 1 / 2;
+        grid-column: 1 / 9;
+        overflow-y: scroll;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        .top-components__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 100%;
+            .current--billing__container {
+                width: 45%;
+                margin-left: 2rem;
+                width: 100%;
+                height: 100%;
+                table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                    width: 100%;
+                    padding: 5px;
+                    text-align: left;
+                    th, td {
+                        width: 50%;
+                    }
+                }
+            }
+            .previous--billing__container {
+                //background-color: blueviolet;
+                width: 45%;
+                margin-right: 2rem;
+                margin-left: 2rem;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+    }
+        
+    .bottom-components {
+        //background-color: goldenrod;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        overflow-y: scroll;
+        margin-left: 2rem;
+        .custom-row-class,
+        .custom-header-class {
+            font-size: 1.5rem;
+        }
+    }
+}

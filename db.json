@@ -1,0 +1,257 @@
+{
+  "scans": [
+    {
+      "id": 1,
+      "name": "CT BRAIN",
+      "amount": 2000,
+      "discount": "100",
+      "modality": "CT",
+      "discountType": "number"
+    },
+    {
+      "id": 2,
+      "name": "CT PNS",
+      "amount": 1000,
+      "discount": "200",
+      "modality": "CT",
+      "discountType": "number"
+    },
+    {
+      "id": 3,
+      "name": "MRI BRAIN",
+      "amount": 3000,
+      "discount": "300",
+      "modality": "MRI",
+      "discountType": "number"
+    },
+    {
+      "id": 4,
+      "name": "MRI PNS",
+      "amount": 2400,
+      "discount": "30",
+      "modality": "MRI",
+      "discountType": "percent"
+    },
+    {
+      "id": 5,
+      "name": "GLUCOSE FASTING",
+      "amount": 130,
+      "discount": "10",
+      "modality": "LAB",
+      "discountType": "percent"
+    },
+    {
+      "id": 6,
+      "name": "SUGAR TESTING",
+      "amount": 300,
+      "discount": "5",
+      "modality": "LAB",
+      "discountType": "percent"
+    }
+  ],
+  "modality": [
+    {
+      "id": 1,
+      "name": "CT",
+      "number": 7
+    },
+    {
+      "id": 2,
+      "name": "MRI",
+      "number": 6
+    },
+    {
+      "id": 3,
+      "name": "LAB",
+      "number": "Infinity"
+    }
+  ],
+  "appointments": [
+    {
+      "userInfo": {
+        "prefix": "mrs",
+        "name": "Amy",
+        "gender": "female",
+        "dob": "1976-10-12",
+        "age": "44",
+        "ageType": "adults",
+        "appointmentDate": "2021-03-26",
+        "phone": "123456778",
+        "address": {
+          "street1": "999 S",
+          "street2": "",
+          "city": "Newton",
+          "state": "MA",
+          "zipcode": "21222",
+          "country": "united states"
+        }
+      },
+      "records": [
+        {
+          "name": "CT BRAIN",
+          "amount": 2000,
+          "discount": 100,
+          "total": 1900,
+          "modality": "CT"
+        },
+        {
+          "name": "CT BRAIN",
+          "amount": 2000,
+          "discount": 100,
+          "total": 1900,
+          "modality": "CT"
+        },
+        {
+          "name": "CT PNS",
+          "amount": 1000,
+          "discount": 100,
+          "total": 900,
+          "modality": "CT"
+        },
+        {
+          "name": "CT PNS",
+          "amount": 1000,
+          "discount": 100,
+          "total": 900,
+          "modality": "CT"
+        }
+      ],
+      "billSummary": {
+        "totalAmount": 6000,
+        "totalDiscount": 400,
+        "totalAmountAfterDiscount": 5600,
+        "currentBalance": 5600,
+        "counts": 0
+      },
+      "billStatus": "Not yet Billed",
+      "id": 1
+    },
+    {
+      "userInfo": {
+        "prefix": "mr",
+        "name": "Qingyuan Ma",
+        "gender": "male",
+        "dob": "1995-11-30",
+        "age": "25",
+        "ageType": "adults",
+        "appointmentDate": "2021-02-08",
+        "phone": "999999999",
+        "address": {
+          "street1": "167 Pine St ",
+          "street2": "",
+          "city": "Dover",
+          "state": "MA",
+          "zipcode": "02030",
+          "country": "united states"
+        }
+      },
+      "records": [
+        {
+          "name": "SUGAR TESTING",
+          "amount": 300,
+          "discount": 10,
+          "total": 290,
+          "modality": "LAB"
+        },
+        {
+          "name": "SUGAR TESTING",
+          "amount": 300,
+          "discount": 10,
+          "total": 290,
+          "modality": "LAB"
+        },
+        {
+          "name": "SUGAR TESTING",
+          "amount": 300,
+          "discount": 10,
+          "total": 290,
+          "modality": "LAB"
+        },
+        {
+          "name": "CT PNS",
+          "amount": 1000,
+          "discount": 10,
+          "total": 990,
+          "modality": "CT"
+        }
+      ],
+      "billSummary": {
+        "totalAmount": 1900,
+        "totalDiscount": 40,
+        "totalAmountAfterDiscount": 1860,
+        "currentBalance": 1860,
+        "counts": 0
+      },
+      "billStatus": "Not yet Billed",
+      "id": 2
+    },
+    {
+      "userInfo": {
+        "prefix": "miss",
+        "name": "Karry",
+        "gender": "female",
+        "dob": "1998-11-18",
+        "age": "22",
+        "ageType": "",
+        "appointmentDate": "2021-02-28",
+        "phone": "00000000",
+        "address": {
+          "street1": "167 Pine St",
+          "street2": "",
+          "city": "Dover",
+          "state": "MA",
+          "zipcode": "02030",
+          "country": "virgin islands (us)"
+        }
+      },
+      "records": [
+        {
+          "name": "SUGAR TESTING",
+          "amount": 300,
+          "discount": 10,
+          "total": 290,
+          "modality": "LAB"
+        },
+        {
+          "name": "SUGAR TESTING",
+          "amount": 300,
+          "discount": 10,
+          "total": 290,
+          "modality": "LAB"
+        },
+        {
+          "name": "SUGAR TESTING",
+          "amount": 300,
+          "discount": 10,
+          "total": 290,
+          "modality": "LAB"
+        },
+        {
+          "name": "GLUCOSE FASTING",
+          "amount": 130,
+          "discount": 10,
+          "total": 120,
+          "modality": "LAB"
+        },
+        {
+          "name": "GLUCOSE FASTING",
+          "amount": 130,
+          "discount": 10,
+          "total": 120,
+          "modality": "LAB"
+        }
+      ],
+      "billSummary": {
+        "totalAmount": 1160,
+        "totalDiscount": 50,
+        "totalAmountAfterDiscount": 1110,
+        "currentBalance": 1110,
+        "counts": 0
+      },
+      "billStatus": "Not yet Billed",
+      "id": 3
+    }
+  ],
+  "transactions": [
+  ]
+}

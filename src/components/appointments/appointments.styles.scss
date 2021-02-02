@@ -1,0 +1,14 @@
+.appointment-table {
+    width: 90vw;
+    .appointment-table-form {
+        .appointment-table-container {
+            input.appointment-table__input {
+                width: 20rem;
+            }
+            
+        }
+        button.appointment-table__button {
+            width: 10rem;
+        }
+    }
+}

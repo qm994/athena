@@ -1,0 +1,8 @@
+$header-color: #2174a7;
+
+.header {
+    color: $header-color;
+    font-size: 3em;
+    margin: 1em;
+    border-bottom: 1px solid $header-color;
+}

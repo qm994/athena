@@ -1,0 +1,86 @@
+@mixin labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin inputs-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.patient-form {
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+  background-color: #eee;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  width: 60vw;
+  height: 60vh;
+  color: #eee;
+  font-size: 1.5rem;
+  color: black;
+
+  .form__labels,
+  .form__inputs {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-family: sans-serif;
+  }
+
+  .form__labels {
+    &--col1 {
+      @include labels;
+      margin-top: 2rem;
+    }
+    &--col2 {
+      @include labels;
+      margin-top: 1rem;
+    }
+    &--col3 {
+      @include labels;
+    }
+  }
+
+  .form__inputs {
+    &--col1 {
+      .row-container {
+        flex-direction: row;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      @include inputs-col;
+    }
+
+    &--col2 {
+      @include inputs-col;
+      .row-container {
+        flex-direction: row;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+    &--col3 {
+      grid-column: 2 / -1;
+      @include inputs-col;
+      #address1,
+      #address2 {
+        width: 80%;
+      }
+      #city,
+      #state,
+      #zipcode,
+      #country {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

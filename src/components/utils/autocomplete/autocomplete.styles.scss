@@ -1,0 +1,16 @@
+.option {
+    display: block;
+    //background-color: red;
+    // margin: 10px auto;
+    // padding: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 2px;
+    :hover {
+        font-weight: bold;
+        color: #00b4cc;
+        cursor: pointer;
+        transition: 0.3s all;
+        background-color: #00b4cc;
+      }
+  }

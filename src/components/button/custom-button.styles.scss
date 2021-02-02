@@ -1,0 +1,18 @@
+$dark-grey: #777;
+
+
+.custom-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 2rem;
+    height: 3rem;
+    width: 5rem;
+    border: 2px solid $dark-grey;
+    margin: 1rem auto;
+    &:hover {
+        background-color: $dark-grey;
+        color: black;
+        border: 1px solid $dark-grey;
+      }
+}

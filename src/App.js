@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, useEffect } from 'react';
+import './App.scss';
+import PatientInfoBill from './components/patient-info-bill/patient-info-bill.component';
+import Appointments from './components/appointments/appointments.component';
+import TransactionsPage from './components/transactions-page/transactions-page.component';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import {
+    BrowserRouter,
+    Switch,
+    Route,
+  } from "react-router-dom";
+
+const App = () => {
+    return (
+        <BrowserRouter>
+            <Fragment>
+                <Route exact path='/' component={PatientInfoBill} />
+                <Route exact path='/appointments' component={Appointments} />
+                <Route exact path='/transactions' component={TransactionsPage}/>
+            </Fragment>
+        </BrowserRouter>
+    )
+};
 
 export default App;
